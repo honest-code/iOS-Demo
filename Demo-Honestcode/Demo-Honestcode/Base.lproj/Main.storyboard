@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_Honestcode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Demo_Honestcode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,7 +49,7 @@
                                     <constraint firstAttribute="height" constant="50" id="fS0-XG-KFc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="LOGIN">
+                                <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-207.19999999999999" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="BJg-3y-g5v">
             <objects>
-                <viewController id="Kvt-Aj-3xe" sceneMemberID="viewController">
+                <viewController id="Kvt-Aj-3xe" customClass="SignInViewController" customModule="Demo_Honestcode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m7f-i1-ffe"/>
                         <viewControllerLayoutGuide type="bottom" id="uxb-Di-dnC"/>
@@ -88,19 +88,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-ki-gPz">
-                                <rect key="frame" x="32" y="120" width="311" height="30"/>
+                                <rect key="frame" x="32" y="164" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PZ-ma-cIr">
-                                <rect key="frame" x="32" y="182" width="311" height="30"/>
+                                <rect key="frame" x="32" y="226" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvU-tL-RGT">
-                                <rect key="frame" x="97" y="262" width="180" height="50"/>
+                                <rect key="frame" x="97" y="306" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.28516191239999999" green="0.7400215268" blue="0.86178690199999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pnm-yT-suC"/>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="640.79999999999995" y="126.38680659670166"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="pjW-ts-RIV">
             <objects>
-                <viewController id="R7j-ft-nUk" sceneMemberID="viewController">
+                <viewController id="R7j-ft-nUk" customClass="WelcomeViewController" customModule="Demo_Honestcode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Svp-6S-Hbj"/>
                         <viewControllerLayoutGuide type="bottom" id="QoB-k5-ybS"/>
@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq6-aF-wyI">
-                                <rect key="frame" x="122.5" y="100" width="129.5" height="40"/>
+                                <rect key="frame" x="122.5" y="144" width="129.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9AE-bn-IcV"/>
                                 </constraints>
@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="1538.4000000000001" y="127.28635682158921"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="M23-Qu-JSq">
             <objects>
-                <viewController id="gv6-0M-E8W" sceneMemberID="viewController">
+                <viewController id="gv6-0M-E8W" customClass="SignUpViewController" customModule="Demo_Honestcode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p59-kK-Pf1"/>
                         <viewControllerLayoutGuide type="bottom" id="olB-mU-L7W"/>
