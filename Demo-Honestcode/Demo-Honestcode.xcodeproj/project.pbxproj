@@ -17,6 +17,7 @@
 		5350C0131EE6EB2D00831EC2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0121EE6EB2D00831EC2 /* SignUpViewController.swift */; };
 		5350C0151EE6EB6200831EC2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0141EE6EB6200831EC2 /* SignInViewController.swift */; };
 		5350C0181EE6EB7400831EC2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0171EE6EB7400831EC2 /* WelcomeViewController.swift */; };
+		5358944C1EE7F81A00D85938 /* Login.feature in Resources */ = {isa = PBXBuildFile; fileRef = 5358944B1EE7F81A00D85938 /* Login.feature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5350C0121EE6EB2D00831EC2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5350C0141EE6EB6200831EC2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5350C0171EE6EB7400831EC2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5358944B1EE7F81A00D85938 /* Login.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Login.feature; path = ../../test/acceptance/features/Login.feature; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		5350C0011EE6C37100831EC2 /* Demo-HonestcodeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				5358944A1EE7F7FC00D85938 /* features */,
 				5350C0021EE6C37100831EC2 /* Demo_HonestcodeUITests.swift */,
 				5350C0041EE6C37100831EC2 /* Info.plist */,
 			);
@@ -156,6 +159,14 @@
 				5350C0171EE6EB7400831EC2 /* WelcomeViewController.swift */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		5358944A1EE7F7FC00D85938 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				5358944B1EE7F81A00D85938 /* Login.feature */,
+			);
+			name = features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5358944C1EE7F81A00D85938 /* Login.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +562,7 @@
 				5350C0091EE6C37100831EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5350C00A1EE6C37100831EC2 /* Build configuration list for PBXNativeTarget "Demo-HonestcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +571,7 @@
 				5350C00C1EE6C37100831EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5350C00D1EE6C37100831EC2 /* Build configuration list for PBXNativeTarget "Demo-HonestcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +580,7 @@
 				5350C00F1EE6C37100831EC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
