@@ -20,11 +20,11 @@ class Login: NSObject {
         }
         
         When("the user tap 'Sign Up' button") { (args, userInfo) in
-            
+            LoginScreen.tapSignUpButton()
         }
         
         Then("the page 'Sign Up' is opened") { (args, userInfo) in
-            
+            SignUpScreen.screenExists()
         }
         
         /*  Scenario: Navigate to Sign in  */
@@ -34,11 +34,11 @@ class Login: NSObject {
         }
         
         When("the user tap 'Sign In' button") { (args, userInfo) in
-            
+            LoginScreen.tapSignInButton()
         }
         
         Then("the page 'Sign In' is opened") { (args, userInfo) in
-            
+            SignInScreen.screenExists()
         }
         
     }

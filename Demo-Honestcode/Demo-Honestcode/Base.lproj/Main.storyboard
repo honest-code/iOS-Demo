@@ -31,6 +31,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-sJ-JJf">
                                 <rect key="frame" x="97" y="453" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.41887742280960083" green="0.75578582286834717" blue="0.64145439863204956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SignUpButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="6xv-EY-kFv"/>
                                 </constraints>
@@ -45,6 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CG-2Q-GRB">
                                 <rect key="frame" x="97" y="371" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.28516191244125366" green="0.74002152681350708" blue="0.86178690195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SignInButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="fS0-XG-KFc"/>
                                 </constraints>
@@ -93,12 +95,14 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-ki-gPz">
                                 <rect key="frame" x="32" y="120" width="311" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailSignInTextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PZ-ma-cIr">
                                 <rect key="frame" x="32" y="182" width="311" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordSignInTextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -106,6 +110,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvU-tL-RGT">
                                 <rect key="frame" x="97" y="262" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.28516191239999999" green="0.7400215268" blue="0.86178690199999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="enterButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pnm-yT-suC"/>
                                     <constraint firstAttribute="width" constant="180" id="bfi-7j-9Up"/>
@@ -197,6 +202,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="honestcode-logo" translatesAutoresizingMaskIntoConstraints="NO" id="toL-K6-hG7">
                                 <rect key="frame" x="97" y="80" width="180" height="180"/>
+                                <accessibility key="accessibilityConfiguration" identifier="honestcodeSignUpImage"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="C1k-av-1hw"/>
                                     <constraint firstAttribute="width" constant="180" id="mKm-gJ-z8m"/>
@@ -204,6 +210,7 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D68-5t-AeV">
                                 <rect key="frame" x="32" y="437" width="311" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="emailSignUpTextField"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -211,6 +218,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEo-gf-Pap">
                                 <rect key="frame" x="97" y="517" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.41887742280000001" green="0.75578582289999996" blue="0.64145439859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sendButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Yqs-EA-1N5"/>
                                 </constraints>
@@ -224,6 +232,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajf-13-fdb">
                                 <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="closeButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7Sv-tJ-TYK"/>
                                     <constraint firstAttribute="width" constant="46" id="Cqu-Bt-uew"/>
@@ -235,6 +244,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email and we will contact you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-FO-F6s">
                                 <rect key="frame" x="32" y="366" width="311" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="infoSignUpLabel"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="co6-3g-Iwb"/>
                                 </constraints>

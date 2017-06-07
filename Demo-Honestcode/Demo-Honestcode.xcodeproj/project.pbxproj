@@ -24,6 +24,9 @@
 		5358945E1EE82D0500D85938 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358945D1EE82D0500D85938 /* Login.swift */; };
 		535894601EE82DDC00D85938 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358945F1EE82DDC00D85938 /* SignIn.swift */; };
 		535894621EE82DFB00D85938 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894611EE82DFB00D85938 /* SignUp.swift */; };
+		535894651EE843D200D85938 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894641EE843D200D85938 /* LoginScreen.swift */; };
+		535894671EE8453A00D85938 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894661EE8453A00D85938 /* SignInScreen.swift */; };
+		535894691EE8454700D85938 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894681EE8454700D85938 /* SignUpScreen.swift */; };
 		8B964A8AF1C5C90E75D5E0C5 /* Pods_Demo_HonestcodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DECF240BDFD3444C8B716 /* Pods_Demo_HonestcodeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +72,9 @@
 		5358945D1EE82D0500D85938 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		5358945F1EE82DDC00D85938 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		535894611EE82DFB00D85938 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		535894641EE843D200D85938 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		535894661EE8453A00D85938 /* SignInScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		535894681EE8454700D85938 /* SignUpScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		7181CE33727A401F1FC2A108 /* Pods-Demo-HonestcodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-HonestcodeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo-HonestcodeUITests/Pods-Demo-HonestcodeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A03DECF240BDFD3444C8B716 /* Pods_Demo_HonestcodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_HonestcodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E118C5E1D50C577AB41D62 /* Pods-Demo-HonestcodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-HonestcodeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo-HonestcodeUITests/Pods-Demo-HonestcodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 		5350C0011EE6C37100831EC2 /* Demo-HonestcodeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				535894631EE843A900D85938 /* PageObjects */,
 				5358945C1EE82CE500D85938 /* Steps */,
 				5358944A1EE7F7FC00D85938 /* features */,
 				5350C0041EE6C37100831EC2 /* Info.plist */,
@@ -210,6 +217,16 @@
 				535894611EE82DFB00D85938 /* SignUp.swift */,
 			);
 			name = Steps;
+			sourceTree = "<group>";
+		};
+		535894631EE843A900D85938 /* PageObjects */ = {
+			isa = PBXGroup;
+			children = (
+				535894641EE843D200D85938 /* LoginScreen.swift */,
+				535894661EE8453A00D85938 /* SignInScreen.swift */,
+				535894681EE8454700D85938 /* SignUpScreen.swift */,
+			);
+			name = PageObjects;
 			sourceTree = "<group>";
 		};
 		9D19777296B10FBFCD80CAC4 /* Pods */ = {
@@ -436,8 +453,11 @@
 				5358945E1EE82D0500D85938 /* Login.swift in Sources */,
 				535894531EE813C900D85938 /* CucumberishInit.m in Sources */,
 				535894551EE8141900D85938 /* CucumberishInitializer.swift in Sources */,
+				535894691EE8454700D85938 /* SignUpScreen.swift in Sources */,
+				535894671EE8453A00D85938 /* SignInScreen.swift in Sources */,
 				535894601EE82DDC00D85938 /* SignIn.swift in Sources */,
 				535894621EE82DFB00D85938 /* SignUp.swift in Sources */,
+				535894651EE843D200D85938 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
