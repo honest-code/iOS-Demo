@@ -5,17 +5,6 @@ Feature: Login
   As a user
   I want to have a login process with sign in and sign up options
 
-  Scenario: Sign up - Error
-    Given a user in 'Sign Up' page
-    When the user tap 'Send' button
-    Then the alert 'SignUp_Error' is opened
-
-  Scenario: Sign up - OK
-    Given a user in 'Sign Up' page
-    When the user write the email in 'Email_Textfield'
-    And the user tap 'Send' button
-    Then the page 'Sign Up' disappear
-
   Scenario: Navigate to Sign up
     Given a user
     When the user tap 'Sign Up' button
