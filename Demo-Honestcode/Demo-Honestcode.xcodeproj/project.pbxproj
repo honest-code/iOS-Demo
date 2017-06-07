@@ -12,14 +12,18 @@
 		5350BFEA1EE6C37100831EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5350BFE91EE6C37100831EC2 /* Assets.xcassets */; };
 		5350BFED1EE6C37100831EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5350BFEB1EE6C37100831EC2 /* LaunchScreen.storyboard */; };
 		5350BFF81EE6C37100831EC2 /* Demo_HonestcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350BFF71EE6C37100831EC2 /* Demo_HonestcodeTests.swift */; };
-		5350C0031EE6C37100831EC2 /* Demo_HonestcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0021EE6C37100831EC2 /* Demo_HonestcodeUITests.swift */; };
 		5350C0111EE6EB1700831EC2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0101EE6EB1700831EC2 /* LoginViewController.swift */; };
 		5350C0131EE6EB2D00831EC2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0121EE6EB2D00831EC2 /* SignUpViewController.swift */; };
 		5350C0151EE6EB6200831EC2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0141EE6EB6200831EC2 /* SignInViewController.swift */; };
 		5350C0181EE6EB7400831EC2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350C0171EE6EB7400831EC2 /* WelcomeViewController.swift */; };
+		535894531EE813C900D85938 /* CucumberishInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 535894521EE813C900D85938 /* CucumberishInit.m */; };
+		535894551EE8141900D85938 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894541EE8141900D85938 /* CucumberishInitializer.swift */; };
 		535894591EE82C0D00D85938 /* Login.feature in Resources */ = {isa = PBXBuildFile; fileRef = 535894561EE82C0D00D85938 /* Login.feature */; };
 		5358945A1EE82C0D00D85938 /* Sign_In.feature in Resources */ = {isa = PBXBuildFile; fileRef = 535894571EE82C0D00D85938 /* Sign_In.feature */; };
 		5358945B1EE82C0D00D85938 /* Sign_Up.feature in Resources */ = {isa = PBXBuildFile; fileRef = 535894581EE82C0D00D85938 /* Sign_Up.feature */; };
+		5358945E1EE82D0500D85938 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358945D1EE82D0500D85938 /* Login.swift */; };
+		535894601EE82DDC00D85938 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358945F1EE82DDC00D85938 /* SignIn.swift */; };
+		535894621EE82DFB00D85938 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535894611EE82DFB00D85938 /* SignUp.swift */; };
 		8B964A8AF1C5C90E75D5E0C5 /* Pods_Demo_HonestcodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03DECF240BDFD3444C8B716 /* Pods_Demo_HonestcodeUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,15 +55,20 @@
 		5350BFF71EE6C37100831EC2 /* Demo_HonestcodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_HonestcodeTests.swift; sourceTree = "<group>"; };
 		5350BFF91EE6C37100831EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5350BFFE1EE6C37100831EC2 /* Demo-HonestcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo-HonestcodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5350C0021EE6C37100831EC2 /* Demo_HonestcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_HonestcodeUITests.swift; sourceTree = "<group>"; };
 		5350C0041EE6C37100831EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5350C0101EE6EB1700831EC2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5350C0121EE6EB2D00831EC2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5350C0141EE6EB6200831EC2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5350C0171EE6EB7400831EC2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		535894511EE813C900D85938 /* Demo-HonestcodeUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-HonestcodeUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		535894521EE813C900D85938 /* CucumberishInit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishInit.m; sourceTree = "<group>"; };
+		535894541EE8141900D85938 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		535894561EE82C0D00D85938 /* Login.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Login.feature; path = test/acceptance/features/Login.feature; sourceTree = SOURCE_ROOT; };
 		535894571EE82C0D00D85938 /* Sign_In.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sign_In.feature; path = test/acceptance/features/Sign_In.feature; sourceTree = SOURCE_ROOT; };
 		535894581EE82C0D00D85938 /* Sign_Up.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Sign_Up.feature; path = test/acceptance/features/Sign_Up.feature; sourceTree = SOURCE_ROOT; };
+		5358945D1EE82D0500D85938 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5358945F1EE82DDC00D85938 /* SignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		535894611EE82DFB00D85938 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		7181CE33727A401F1FC2A108 /* Pods-Demo-HonestcodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-HonestcodeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo-HonestcodeUITests/Pods-Demo-HonestcodeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A03DECF240BDFD3444C8B716 /* Pods_Demo_HonestcodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_HonestcodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E118C5E1D50C577AB41D62 /* Pods-Demo-HonestcodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-HonestcodeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo-HonestcodeUITests/Pods-Demo-HonestcodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,9 +152,12 @@
 		5350C0011EE6C37100831EC2 /* Demo-HonestcodeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				5358945C1EE82CE500D85938 /* Steps */,
 				5358944A1EE7F7FC00D85938 /* features */,
-				5350C0021EE6C37100831EC2 /* Demo_HonestcodeUITests.swift */,
 				5350C0041EE6C37100831EC2 /* Info.plist */,
+				535894521EE813C900D85938 /* CucumberishInit.m */,
+				535894511EE813C900D85938 /* Demo-HonestcodeUITests-Bridging-Header.h */,
+				535894541EE8141900D85938 /* CucumberishInitializer.swift */,
 			);
 			path = "Demo-HonestcodeUITests";
 			sourceTree = "<group>";
@@ -188,6 +200,16 @@
 				535894581EE82C0D00D85938 /* Sign_Up.feature */,
 			);
 			name = features;
+			sourceTree = "<group>";
+		};
+		5358945C1EE82CE500D85938 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				5358945D1EE82D0500D85938 /* Login.swift */,
+				5358945F1EE82DDC00D85938 /* SignIn.swift */,
+				535894611EE82DFB00D85938 /* SignUp.swift */,
+			);
+			name = Steps;
 			sourceTree = "<group>";
 		};
 		9D19777296B10FBFCD80CAC4 /* Pods */ = {
@@ -282,6 +304,7 @@
 					5350BFFD1EE6C37100831EC2 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3VW789WSMP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5350BFDE1EE6C37100831EC2;
 					};
@@ -410,7 +433,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5350C0031EE6C37100831EC2 /* Demo_HonestcodeUITests.swift in Sources */,
+				5358945E1EE82D0500D85938 /* Login.swift in Sources */,
+				535894531EE813C900D85938 /* CucumberishInit.m in Sources */,
+				535894551EE8141900D85938 /* CucumberishInitializer.swift in Sources */,
+				535894601EE82DDC00D85938 /* SignIn.swift in Sources */,
+				535894621EE82DFB00D85938 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,11 +630,14 @@
 			baseConfigurationReference = C8E118C5E1D50C577AB41D62 /* Pods-Demo-HonestcodeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "Demo-HonestcodeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igz.honestcode.ios.Demo-HonestcodeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-HonestcodeUITests/Demo-HonestcodeUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Demo-Honestcode";
 			};
@@ -618,11 +648,13 @@
 			baseConfigurationReference = 7181CE33727A401F1FC2A108 /* Pods-Demo-HonestcodeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3VW789WSMP;
 				INFOPLIST_FILE = "Demo-HonestcodeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igz.honestcode.ios.Demo-HonestcodeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-HonestcodeUITests/Demo-HonestcodeUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Demo-Honestcode";
 			};
