@@ -20,4 +20,15 @@ class LoginScreen: NSObject {
     static func tapSignUpButton() {
         app.buttons["SignUpButton"].tap()
     }
+    
+    static func screenExists() {
+        let signInButton = app.buttons["SignInButton"]
+        XCTAssert(signInButton.exists)
+        
+        let signUpButton = app.buttons["SignUpButton"]
+        XCTAssert(signUpButton.exists)
+        
+        let image = app.images["honestcodeLoginImage"]
+        XCTAssert(image.exists)
+    }
 }

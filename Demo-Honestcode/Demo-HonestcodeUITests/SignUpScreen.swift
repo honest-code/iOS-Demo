@@ -29,4 +29,17 @@ class SignUpScreen: NSObject {
         let label = app.staticTexts["infoSignUpLabel"]
         XCTAssert(label.exists)
     }
+    
+    static func tapSendButton() {
+        app.buttons["sendButton"].tap()
+    }
+    
+    static func writeEmail() {
+        app.textFields["emailSignUpTextField"].value = "user@domain.com"
+    }
+    
+    static func sendButtonDisabled() {
+        let sendButton = app.buttons["sendButton"]
+        XCTAssert(!sendButton.isEnabled)
+    }
 }

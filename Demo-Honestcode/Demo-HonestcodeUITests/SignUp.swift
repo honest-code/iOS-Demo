@@ -16,33 +16,33 @@ class SignUp: NSObject {
         /*  Scenario: Sign up - Error  */
         
         Given("a user in 'Sign Up' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignUpButton()
         }
         
-        When("the user tap 'Send' button") { (args, userInfo) in
-            
+        When("the user doesn't write the 'Email' text field") { (args, userInfo) in
+
         }
         
-        Then("the alert 'Sign Up Error' is opened") { (args, userInfo) in
-            
+        Then("the 'Send' button is disabled") { (args, userInfo) in
+            SignUpScreen.sendButtonDisabled()
         }
         
         /*  Scenario: Sign up - OK  */
         
         Given("a user in 'Sign Up' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignUpButton()
         }
         
         When("the user write the email in 'Email' text field") { (args, userInfo) in
-            
+            SignUpScreen.writeEmail()
         }
 
         And("the user tap 'Send' button") { (args, userInfo) in
-            
+            SignUpScreen.tapSendButton()
         }
         
         Then("the page 'Sign Up' disappear") { (args, userInfo) in
-            
+            LoginScreen.screenExists()
         }
         
     }
