@@ -19,11 +19,11 @@ class SignIn: NSObject {
             LoginScreen.tapSignInButton()
         }
         
-        When("the user doesn't write the 'Email' text field") { (args, userInfo) in
+        When("the user doesn't write the 'Email' text field of 'Sign In' screen") { (args, userInfo) in
             
         }
         
-        And("the user write the password in 'Password' text field") { (args, userInfo) in
+        And("the user write the password in 'Password' text field of 'Sign In' screen") { (args, userInfo) in
             SignInScreen.writePassword()
         }
         
@@ -37,11 +37,11 @@ class SignIn: NSObject {
             LoginScreen.tapSignInButton()
         }
         
-        When("the user write the email in 'Email' text field") { (args, userInfo) in
+        When("the user write the email in 'Email' text field of 'Sign In' screen") { (args, userInfo) in
             SignInScreen.writeEmail()
         }
         
-        And("the user doesn't write the 'Password' text field") { (args, userInfo) in
+        And("the user doesn't write the 'Password' text field of 'Sign In' screen") { (args, userInfo) in
             
         }
         
@@ -55,11 +55,11 @@ class SignIn: NSObject {
             LoginScreen.tapSignInButton()
         }
         
-        When("the user write the email in 'Email' text field") { (args, userInfo) in
+        When("the user write the email in 'Email' text field of 'Sign In' screen") { (args, userInfo) in
             SignInScreen.writeEmail()
         }
         
-        And("the user write the password in 'Password' text field") { (args, userInfo) in
+        And("the user write the password in 'Password' text field of 'Sign In' screen") { (args, userInfo) in
             SignInScreen.writePassword()
         }
         
@@ -77,11 +77,11 @@ class SignIn: NSObject {
             LoginScreen.tapSignInButton()
         }
         
-        When("the user doesn't write the 'Email' text field") { (args, userInfo) in
+        When("the user doesn't write the 'Email' text field of 'Sign In' screen") { (args, userInfo) in
             
         }
         
-        And("the user doesn't write the 'Password' text field") { (args, userInfo) in
+        And("the user doesn't write the 'Password' text field of 'Sign In' screen") { (args, userInfo) in
             
         }
         

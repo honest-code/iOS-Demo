@@ -31,11 +31,13 @@ class SignInScreen: NSObject {
     
     static func writeEmail() {
         let emailTextField = app.textFields["emailSignInTextField"]
+        emailTextField.tap()
         emailTextField.typeText("user@domain.com")
     }
     
     static func writePassword() {
         let passwordTextField = app.textFields["passwordSignInTextField"]
+        passwordTextField.tap()
         passwordTextField.typeText("password")
     }
     

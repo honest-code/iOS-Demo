@@ -19,7 +19,7 @@ class SignUp: NSObject {
             LoginScreen.tapSignUpButton()
         }
         
-        When("the user doesn't write the 'Email' text field") { (args, userInfo) in
+        When("the user doesn't write the 'Email' text field of 'Sign Up' screen") { (args, userInfo) in
 
         }
         
@@ -33,7 +33,7 @@ class SignUp: NSObject {
             LoginScreen.tapSignUpButton()
         }
         
-        When("the user write the email in 'Email' text field") { (args, userInfo) in
+        When("the user write the email in 'Email' text field of 'Sign Up' screen") { (args, userInfo) in
             SignUpScreen.writeEmail()
         }
 
