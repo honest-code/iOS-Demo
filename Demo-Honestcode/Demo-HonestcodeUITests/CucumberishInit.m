@@ -6,7 +6,7 @@
 //  Copyright © 2017 HonestCode. All rights reserved.
 //
 
-#import "Demo-HonestcodeUITests-Swift.h"
+#import "Demo_HonestcodeUITests-Swift.h"
 
 __attribute__((constructor))
 void CucumberishInit()

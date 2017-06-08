@@ -35,7 +35,8 @@ class SignUpScreen: NSObject {
     }
     
     static func writeEmail() {
-        app.textFields["emailSignUpTextField"].value = "user@domain.com"
+        let emailTextField = app.textFields["emailSignUpTextField"]
+        emailTextField.typeText("user@domain.com")
     }
     
     static func sendButtonDisabled() {
