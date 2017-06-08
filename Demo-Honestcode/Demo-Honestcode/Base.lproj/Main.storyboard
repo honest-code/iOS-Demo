@@ -161,6 +161,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq6-aF-wyI">
                                 <rect key="frame" x="122.5" y="100" width="129.5" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="welcomeLabel"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9AE-bn-IcV"/>
                                 </constraints>
@@ -170,6 +171,7 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="honestcode-logo" translatesAutoresizingMaskIntoConstraints="NO" id="2OS-Ex-k5T">
                                 <rect key="frame" x="142" y="288.5" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration" identifier="honestcodeWelcomeImage"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="CPf-VZ-tFB"/>
                                     <constraint firstAttribute="height" constant="90" id="lHT-Rt-eXH"/>

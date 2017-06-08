@@ -23,4 +23,23 @@ class SignInScreen: NSObject {
         let enterButton = app.buttons["enterButton"]
         XCTAssert(enterButton.exists)
     }
+    
+    static func enterButtonDisabled() {
+        let enterButton = app.buttons["enterButton"]
+        XCTAssert(!enterButton.isEnabled)
+    }
+    
+    static func writeEmail() {
+        let emailTextField = app.textFields["emailSignInTextField"]
+        emailTextField.typeText("user@domain.com")
+    }
+    
+    static func writePassword() {
+        let passwordTextField = app.textFields["passwordSignInTextField"]
+        passwordTextField.typeText("password")
+    }
+    
+    static func tapEnterButton() {
+        app.buttons["enterButton"].tap()
+    }
 }

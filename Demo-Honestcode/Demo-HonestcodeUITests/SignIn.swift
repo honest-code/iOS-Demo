@@ -16,7 +16,7 @@ class SignIn: NSObject {
         /*  Scenario: Sign In - Email field empty  */
         
         Given("a user in 'Sign In' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignInButton()
         }
         
         When("the user doesn't write the 'Email' text field") { (args, userInfo) in
@@ -24,65 +24,57 @@ class SignIn: NSObject {
         }
         
         And("the user write the password in 'Password' text field") { (args, userInfo) in
-            
+            SignInScreen.writePassword()
         }
         
-        And("the user tap 'Enter' button") { (args, userInfo) in
-            
-        }
-        
-        Then("the alert 'Sign In Error' is opened") { (args, userInfo) in
-            
+        Then("the 'Enter' button is disabled") { (args, userInfo) in
+            SignInScreen.enterButtonDisabled()
         }
         
         /*  Scenario: Sign In - Password field empty  */
         
         Given("a user in 'Sign In' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignInButton()
         }
         
         When("the user write the email in 'Email' text field") { (args, userInfo) in
-            
+            SignInScreen.writeEmail()
         }
         
         And("the user doesn't write the 'Password' text field") { (args, userInfo) in
             
         }
         
-        And("the user tap 'Enter' button") { (args, userInfo) in
-            
-        }
-        
-        Then("the alert 'Sign In Error' is opened") { (args, userInfo) in
-            
+        Then("the 'Enter' button is disabled") { (args, userInfo) in
+            SignInScreen.enterButtonDisabled()
         }
         
         /*  Scenario: Sign In - OK  */
         
         Given("a user in 'Sign In' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignInButton()
         }
         
         When("the user write the email in 'Email' text field") { (args, userInfo) in
-            
+            SignInScreen.writeEmail()
         }
         
         And("the user write the password in 'Password' text field") { (args, userInfo) in
-            
+            SignInScreen.writePassword()
         }
         
         And("the user tap 'Enter' button") { (args, userInfo) in
-            
+            SignInScreen.tapEnterButton()
         }
         
         Then("the page 'Welcome' is opened") { (args, userInfo) in
-            
+            WelcomeScreen.screenExists()
         }
         
         /*  Scenario: Sign In - Empty fields  */
         
         Given("a user in 'Sign In' page") { (args, userInfo) in
-            
+            LoginScreen.tapSignInButton()
         }
         
         When("the user doesn't write the 'Email' text field") { (args, userInfo) in
@@ -93,12 +85,8 @@ class SignIn: NSObject {
             
         }
         
-        And("the user tap 'Enter' button") { (args, userInfo) in
-            
-        }
-        
-        Then("the alert 'Sign In Error' is opened") { (args, userInfo) in
-            
+        Then("the 'Enter' button is disabled") { (args, userInfo) in
+            SignInScreen.enterButtonDisabled()
         }
         
     }

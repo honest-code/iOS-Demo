@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530A326C1EE9620800452BAE /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530A326B1EE9620800452BAE /* WelcomeScreen.swift */; };
 		5350BFE31EE6C37100831EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350BFE21EE6C37100831EC2 /* AppDelegate.swift */; };
 		5350BFE81EE6C37100831EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5350BFE61EE6C37100831EC2 /* Main.storyboard */; };
 		5350BFEA1EE6C37100831EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5350BFE91EE6C37100831EC2 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		530A326B1EE9620800452BAE /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		5350BFDF1EE6C37100831EC2 /* Demo-Honestcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Honestcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5350BFE21EE6C37100831EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5350BFE71EE6C37100831EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				535894641EE843D200D85938 /* LoginScreen.swift */,
 				535894661EE8453A00D85938 /* SignInScreen.swift */,
 				535894681EE8454700D85938 /* SignUpScreen.swift */,
+				530A326B1EE9620800452BAE /* WelcomeScreen.swift */,
 			);
 			name = PageObjects;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				5358945E1EE82D0500D85938 /* Login.swift in Sources */,
 				535894531EE813C900D85938 /* CucumberishInit.m in Sources */,
 				535894551EE8141900D85938 /* CucumberishInitializer.swift in Sources */,
+				530A326C1EE9620800452BAE /* WelcomeScreen.swift in Sources */,
 				535894691EE8454700D85938 /* SignUpScreen.swift in Sources */,
 				535894671EE8453A00D85938 /* SignInScreen.swift in Sources */,
 				535894601EE82DDC00D85938 /* SignIn.swift in Sources */,
