@@ -7,11 +7,11 @@ Feature: Sign Up
 
   Scenario: Sign up - Error
     Given a user in 'Sign Up' page
-    When the user doesn't write the 'Email' text field
+    When the user doesn't write the 'Email' text field of 'Sign Up' screen
     Then the 'Send' button is disabled
 
   Scenario: Sign up - OK
     Given a user in 'Sign Up' page
-    When the user write the email in 'Email' text field
+    When the user write the email in 'Email' text field of 'Sign Up' screen
     And the user tap 'Send' button
     Then the page 'Sign Up' disappear

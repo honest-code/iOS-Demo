@@ -7,25 +7,25 @@ Feature: Sign In
 
   Scenario: Sign In - Email field empty
     Given a user in 'Sign In' page
-    When the user doesn't write the 'Email' text field
-    And the user write the password in 'Password' text field
+    When the user doesn't write the 'Email' text field of 'Sign In' screen
+    And the user write the password in 'Password' text field of 'Sign In' screen
     Then the 'Enter' button is disabled
 
   Scenario: Sign In - Password field empty
     Given a user in 'Sign In' page
-    When the user write the email in 'Email' text field
-    And the user doesn't write the 'Password' text field
+    When the user write the email in 'Email' text field of 'Sign In' screen
+    And the user doesn't write the 'Password' text field of 'Sign In' screen
     Then the 'Enter' button is disabled
 
   Scenario: Sign In - OK
     Given a user in 'Sign In' page
-    When the user write the email in 'Email' text field
-    And the user write the password in 'Password' text field
+    When the user write the email in 'Email' text field of 'Sign In' screen
+    And the user write the password in 'Password' text field of 'Sign In' screen
     And the user tap 'Enter' button
     Then the page 'Welcome' is opened
 
   Scenario: Sign In - Empty fields
     Given a user in 'Sign In' page
-    When the user doesn't write the 'Email' text field
-    And the user doesn't write the 'Password' text field
+    When the user doesn't write the 'Email' text field of 'Sign In' screen
+    And the user doesn't write the 'Password' text field of 'Sign In' screen
     Then the 'Enter' button is disabled
