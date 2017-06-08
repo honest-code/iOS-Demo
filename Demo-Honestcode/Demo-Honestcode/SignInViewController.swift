@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -16,6 +16,10 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
+        self.enterButton.isEnabled = false
+        self.enterButton.backgroundColor = UIColor.gray
         self.enterButton.layer.cornerRadius = self.enterButton.frame.size.height / 2
     }
     
@@ -24,20 +28,22 @@ class SignInViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
-    @IBAction func enterAction(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
-            self.navigationController?.pushViewController(controller, animated: true)
-        } else {
-            showErrorAlert()
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let nsString = textField.text as NSString?
+        let newString = nsString?.replacingCharacters(in: range, with: string).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        if textField == self.emailTextField {
+            self.enterButton.isEnabled = newString != "" && self.passwordTextField.text != ""
+        } else if textField == self.passwordTextField {
+            self.enterButton.isEnabled = newString != "" && self.emailTextField.text != ""
         }
+        self.enterButton.backgroundColor = self.enterButton.isEnabled ? UIColor(colorLiteralRed: 73.0/255.0, green: 189.0/255.0, blue: 220.0/255.0, alpha: 1.0) : UIColor.gray
+        return true
+    }
+
+    @IBAction func enterAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
  
-    func showErrorAlert() {
-        let alertController = UIAlertController(title: "Error", message: "You haven't filled the email and/or password field", preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        self.present(alertController, animated: true, completion: nil)
-    }
 }
