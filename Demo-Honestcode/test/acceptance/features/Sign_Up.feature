@@ -7,8 +7,8 @@ Feature: Sign Up
 
   Scenario: Sign up - Error
     Given a user in 'Sign Up' page
-    When the user tap 'Send' button
-    Then the alert 'Sign Up Error' is opened
+    When the user doesn't write the 'Email' text field
+    Then the 'Send' button is disabled
 
   Scenario: Sign up - OK
     Given a user in 'Sign Up' page

@@ -9,15 +9,13 @@ Feature: Sign In
     Given a user in 'Sign In' page
     When the user doesn't write the 'Email' text field
     And the user write the password in 'Password' text field
-    And the user tap 'Enter' button
-    Then the alert 'Sign In Error' is opened
+    Then the 'Enter' button is disabled
 
   Scenario: Sign In - Password field empty
     Given a user in 'Sign In' page
     When the user write the email in 'Email' text field
     And the user doesn't write the 'Password' text field
-    And the user tap 'Enter' button
-    Then the alert 'Sign In Error' is opened
+    Then the 'Enter' button is disabled
 
   Scenario: Sign In - OK
     Given a user in 'Sign In' page
@@ -30,5 +28,4 @@ Feature: Sign In
     Given a user in 'Sign In' page
     When the user doesn't write the 'Email' text field
     And the user doesn't write the 'Password' text field
-    And the user tap 'Enter' button
-    Then the alert 'Sign In Error' is opened
+    Then the 'Enter' button is disabled
