@@ -15,7 +15,7 @@ This repository contains a basic iOS project connected to Honestcode services. T
 2. Once the features have been written, these can be added to the repository through "Publish now" button ubicated in the blueprint panel.
 3. To add these files to the iOS project, it is necessary follow the Cucumberish guide corresponding to the project configuration. Cucumberish allows read Gherkin features and match the sentences with the tests coded. This is a resume of the main steps to connect the files with our code:
 	1. Locate files added by Honestcode in you project, drag them to the project and drop them in the UI Test target. When Xcode shows the screen to choose options for adding the files, don't select the option "Copy items if needed".
-	2. Create an initializer class with the next code. This code includes the app initialization and its launch before each scenario. If the developer needs configure any kind of behaviour (for example, different kind of users), can add parameters in this point and set the initial state of the app. After this, it's necessary to init the steps of the tests. Finally, the code call Cucumberish to execute the features in the path indicated.
+	2. Create an initializer class with the next code. This code includes the app initialization and its launch before each scenario. If the developer needs configure any kind of behaviour (for example, different kind of users), can add parameters in this point and set the initial state of the app. After this, it's necessary to init the steps of the tests. Finally, the code call Cucumberish to execute the features in the path indicated:
 
 	```Swift
 	import Foundation
@@ -91,9 +91,9 @@ This repository contains a basic iOS project connected to Honestcode services. T
 	}
 	```
 
-	3. Cucumberish is a framework written in Objective-C, so if the project is written in Swift, you must add this .m file calling to Swift initializer. When the file is created, Xcode shows an alert asking about configure an Objective-C bridging header that the developer must create.
+	3. Cucumberish is a framework written in Objective-C, so if the project is written in Swift, you must add this .m file calling to Swift initializer. When the file is created, Xcode shows an alert asking about configure an Objective-C bridging header that the developer must create:
 
-	```Swift
+	```Objective-C
 	#import "Demo_HonestcodeUITests-Swift.h"
 
 	__attribute__((constructor))
