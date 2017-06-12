@@ -38,6 +38,7 @@ class SignUpScreen: NSObject {
         let emailTextField = app.textFields["emailSignUpTextField"]
         emailTextField.tap()
         emailTextField.typeText("user@domain.com")
+        app.keyboards.buttons["Return"].tap()
     }
     
     static func sendButtonDisabled() {

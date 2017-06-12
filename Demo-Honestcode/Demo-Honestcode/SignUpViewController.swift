@@ -34,6 +34,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func sendAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

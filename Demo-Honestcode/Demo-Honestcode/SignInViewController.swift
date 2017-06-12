@@ -39,6 +39,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         self.enterButton.backgroundColor = self.enterButton.isEnabled ? UIColor(colorLiteralRed: 73.0/255.0, green: 189.0/255.0, blue: 220.0/255.0, alpha: 1.0) : UIColor.gray
         return true
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     @IBAction func enterAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
