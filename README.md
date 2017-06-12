@@ -15,7 +15,7 @@ This repository contains a basic iOS project connected to Honestcode services. T
 2. Once the features have been written, these can be added to the repository through "Publish now" button ubicated in the blueprint panel.
 3. To add these files to the iOS project, it is necessary follow the Cucumberish guide corresponding to the project configuration. Cucumberish allows read Gherkin features and match the sentences with the tests coded. This is a resume of the main steps to connect the files with our code:
 	1. Locate files added by Honestcode in you project, drag them to the project and drop them in the UI Test target. When Xcode shows the screen to choose options for adding the files, don't select the option "Copy items if needed".
-	2. Create an initializer class with the next code. This code includes the app initialization and its launch before each scenario. If the developer needs configure any kind of behaviour (for example, different kind of users), can add parameters in this point and set the initial state of the app. After this, it's necessary to init the steps of the tests. Finally, the code call Cucumberish to execute the features in the path indicated:
+	2. Create an initializer class with the next code. This code includes the app initialization and its launch before each scenario. If the developer needs configure any kind of behaviour (for example, different kind of users), can add parameters in this point and set the initial state of the app. After this, it's necessary to init the steps of the tests. Finally, the code call Cucumberish to execute the features in the path indicated.
 
 	```Swift
 	import Foundation
@@ -91,7 +91,7 @@ This repository contains a basic iOS project connected to Honestcode services. T
 	}
 	```
 
-	3. Cucumberish is a framework written in Objective-C, so if the project is written in Swift, you must add this .m file calling to Swift initializer. When the file is created, Xcode shows an alert asking about configure an Objective-C bridging header that the developer must create:
+	3. Cucumberish is a framework written in Objective-C, so if the project is written in Swift, you must add this .m file calling to Swift initializer. When the file is created, Xcode shows an alert asking about configure an Objective-C bridging header that the developer must create.
 
 	```Objective-C
 	#import "Demo_HonestcodeUITests-Swift.h"
@@ -102,3 +102,34 @@ This repository contains a basic iOS project connected to Honestcode services. T
 	    [CucumberishInitializer CucumberishSwiftInit];
 	}
 	```
+
+4. Once all tests are written, you can check the results with CMD+U or selecting which must be tested from "Test navigator" (firstly, you must test all test with CMD+U because there is a [known issue](https://github.com/Ahmed-Ali/Cucumberish#known-issues) with Cucumberish)
+5. Finally, when the tests are completed, it is generated a report that must be uploaded to Honestcode platform. The developer can use the next commands to upload it (the commands can be used from terminal or through a script), where $1 is the project name, and $2 is the identifier of the blueprint to which the tests belong (visible in the blueprint configuration). 
+
+	```
+	HONESTCODE_JSON="$(find ~/Library/Developer/CoreSimulator/Devices/*/data/Containers/Data/Application/*/Documents/CucumberishTestResults-$1UITests.json)" 
+
+	curl -X POST -H "Content-Type: application/json; charset=UTF-8" --data-binary @$HONESTCODE_JSON https://pro.honestcode.io/api/hooks/tr/$2 -v -s > /dev/null
+	```
+
+## Use
+
+This project is ready to be used by anyone. On the one hand, the project has a simple UI with four views through you can navigate. On the other hand, in the UI tests folder there are Honestcode features, Cucumberish initialization code, steppers (files which match features and code) and files which include testing over application. You can run the project to check the app functionality, or run the tests as we described before and check the result of the acceptance tests created in Honestcode.
+
+### Honestcode
+
+In the next pictures, you can see the feature creation process through [Honestcode](https://pro.honestcode.io) platform. It's very easy!
+
+![Features panel](./images/features.png "Features panel with all features of the blueprint selected")
+
+![Scenarios panel](./images/scenarios.png "Scenarios panel with all scenarios of the feature selected")
+
+![Steps panel](./images/steps.png "Steps panel with all steps of the scenario selected")
+
+Finally, after upload the results of the tests, you can see graphically the results in the different panels. This is an example of the results in the features panel:
+
+![Results](./images/results.png "Results of the tests in the features panel. There are 4 tests passed and 4 tests skipped")
+
+## Known issues
+
+For the integration process of Honestcode in an iOS project, we use Cucumberish as the best alternative to read Gherkin features and match the sentences with the tests coded. However, in this process, we detect a bug in the Cucumberish framework ([which has already been reported](https://github.com/Ahmed-Ali/Cucumberish/issues/66)). This bug doesn't allow create the final report if there is more than one feature file and stepper, although the features and steppers are correctly created and all tests passed. We are working in solve this issue until the Cucumberish creator solves the bug. Until this moment, there must be an unique feature file and stepper.
