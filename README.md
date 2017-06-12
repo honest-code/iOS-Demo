@@ -103,7 +103,7 @@ This repository contains a basic iOS project connected to Honestcode services. T
 	}
 	```
 
-4. Once all tests are written, you can check the results with CMD+U or selecting which must be tested from "Test navigator" (firstly, you must test all test with CMD+U because there is a [known issue](https://github.com/Ahmed-Ali/Cucumberish#known-issues) with Cucumberish)
+4. Once all tests are written, you can check the results with CMD+U or selecting the test classes which must be tested from "Test navigator". Because a [known issue](https://github.com/Ahmed-Ali/Cucumberish#known-issues) of Cucumberish, if the developer doesn't test all tests cases, the rest of the scenarios will disappear, and don't appear until the developer tests all the cases with the command CMD+U.
 5. Finally, when the tests are completed, it is generated a report that must be uploaded to Honestcode platform. The developer can use the next commands to upload it (the commands can be used from terminal or through a script), where $1 is the project name, and $2 is the identifier of the blueprint to which the tests belong (visible in the blueprint configuration). 
 
 	```
@@ -128,8 +128,4 @@ In the next pictures, you can see the feature creation process through [Honestco
 
 Finally, after upload the results of the tests, you can see graphically the results in the different panels. This is an example of the results in the features panel:
 
-![Results](./images/results.png "Results of the tests in the features panel. There are 4 tests passed and 4 tests skipped")
-
-## Known issues
-
-For the integration process of Honestcode in an iOS project, we use Cucumberish as the best alternative to read Gherkin features and match the sentences with the tests coded. However, in this process, we detect a bug in the Cucumberish framework ([which has already been reported](https://github.com/Ahmed-Ali/Cucumberish/issues/66)). This bug doesn't allow create the final report if there is more than one feature file and stepper, although the features and steppers are correctly created and all tests passed. We are working in solve this issue until the Cucumberish creator solves the bug. Until this moment, there must be an unique feature file and stepper.
+![Results](./images/results.png "Results of the tests in the features panel. There are 8 tests passed")
